@@ -4,13 +4,34 @@
 	  <title>Blog</title>
 	  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
 	  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+    
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+
+
 	  <%= csrf_meta_tags %>
 	</head>
 	<body>
-    <%= link_to "Home", "/" %>
-    <%= link_to "About", "/about" %>
-    
-		<%= yield %>
 
+  <div class="container">
+    <div class="page-header">
+
+
+    <ul class="nav nav-pills pull-right">
+      <li>
+        <%= link_to "Home", "/" %>
+      </li>
+      <li>
+        <%= link_to "About", "/about" %>
+      </li>
+    </ul>
+    <h1>
+     <%= link_to "Sabri Ibrahim", "/" %>
+      <small>My First ror Project</small>
+    </h1>
+    </div>
+		<%= yield %>
+  </div>
 	</body>
 </html>
